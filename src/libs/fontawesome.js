@@ -9,6 +9,8 @@ import {
     faCheck,
     faFaceSmile,
     faLocationDot,
+    faEnvelope,
+    faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -17,6 +19,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 library.add(
+    faXmark,
+    faEnvelope,
     faBars,
     faComments,
     faLightbulb,

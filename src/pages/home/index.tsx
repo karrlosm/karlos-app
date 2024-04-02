@@ -52,8 +52,6 @@ export const Home = () => {
             setText(true)
         }, 2000)
     }, [])
-    
-    console.log('scrollY', scrollY);
 
     useEffect(() => {
         scrollYProgress.onChange(number => setScrollY(number));
@@ -327,7 +325,7 @@ export const Home = () => {
                                             <Box sx={{ ...css.box.iconWrapper }}>
                                                 <I icon={['fas', 'location-dot']} />
                                             </Box>
-                                            <Typography sx={{ ...css.text.stepper }}>Hoje - Desenvolvedor Front-end na Commarket</Typography>
+                                            <Typography sx={{ ...css.text.stepper }}>Hoje - Desenvolvedor Front-end na <a target="_blank" href="https://commarket.com.br">Commarket</a></Typography>
                                         </Stack>
                                     </Box>
                                 </ motion.li>

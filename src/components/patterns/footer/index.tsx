@@ -27,7 +27,7 @@ export const Footer = () => {
                         justifyContent={'center'}
                         alignItems={'center'}>
                         <a
-                            href="https://www.linkedin.com/in/karlos-mac%C3%AAdo/" target="_blank">
+                            href="https://www.linkedin.com/in/karlosmacedo" target="_blank">
                             <IconButton sx={{ ...css.iconBtn }} >
                                 <I icon={['fab', 'linkedin']} />
                             </IconButton>
@@ -35,6 +35,11 @@ export const Footer = () => {
                         <a href="https://github.com/karrlosm/" target="_blank">
                             <IconButton sx={{ ...css.iconBtn }} >
                                 <I icon={['fab', 'github']} />
+                            </IconButton>
+                        </a>
+                        <a href="mailto:karlosmacedo.dev@gmail.com" target="_blank">
+                            <IconButton sx={{ ...css.iconBtn }} >
+                                <I icon={['fas', 'envelope']} />
                             </IconButton>
                         </a>
                     </Stack>

@@ -96,7 +96,7 @@ export const Header = () => {
                                 spacing={1}
                                 justifyContent={'center'}
                                 alignItems={'center'}>
-                                <a href="https://www.linkedin.com/in/karlos-mac%C3%AAdo/" target="_blank">
+                                <a href="https://www.linkedin.com/in/karlosmacedo/" target="_blank">
                                     <IconButton sx={{ ...css.iconBtn }} >
                                         <I icon={['fab', 'linkedin']} />
                                     </IconButton>
@@ -104,6 +104,11 @@ export const Header = () => {
                                 <a href="https://github.com/karrlosm/" target="_blank">
                                     <IconButton sx={{ ...css.iconBtn }} >
                                         <I icon={['fab', 'github']} />
+                                    </IconButton>
+                                </a>
+                                <a href="mailto:karlosmacedo.dev@gmail.com" target="_blank">
+                                    <IconButton sx={{ ...css.iconBtn }} >
+                                        <I icon={['fas', 'envelope']} />
                                     </IconButton>
                                 </a>
                             </Stack>
@@ -114,7 +119,7 @@ export const Header = () => {
                 <IconButton
                     onClick={() => setIsOpenMenu(!isOpenMenu)}
                     size="large" sx={{ ...css.iconBtn }}>
-                    <I icon={['fas', 'bars']} />
+                    <I icon={['fas', !isOpenMenu ? 'bars' : 'xmark']} />
                 </IconButton>
             </Container>
         </header>

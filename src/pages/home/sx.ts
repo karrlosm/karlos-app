@@ -1,5 +1,5 @@
 import { useMediaQuery } from "@mui/material";
-import Karlos from '../../assets/img/karlos2.png';
+import Karlos from '../../assets/img/karlos.jpg';
 
 export const sx = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -18,11 +18,9 @@ export const sx = () => {
         },
         section: {
             first: {
-                backgroundImage: 'url(https://cdn.discordapp.com/attachments/1044241266134745202/1199070218262155345/SL-031520-28970-33.jpg?ex=65c13429&is=65aebf29&hm=8d189aecdded7f8a73f03692b7a395a704f9dc0a5fe6c233da6f3c1c29dd97f7&)',
                 paddingTop: '4.375rem',
                 paddingBottom: '4.0625rem',
-                backgroundSize: 'cover',
-                backgroundAttachment: 'fixed',
+                backgroundSize: '100%',
                 minHeight: '31.25rem',
             },
             default: {
@@ -61,6 +59,7 @@ export const sx = () => {
             },
             infoBox: {
                 borderRadius: '0.3125rem',
+                backgroundColor: '#fff',
                 boxShadow: '0 0.25rem 0.75rem 0 rgba(0, 0, 0, .08)',
                 p: 2,
                 minHeight: '11.5625rem',
@@ -104,7 +103,10 @@ export const sx = () => {
                 textAlign: 'center',
             },
             stepper: {
-                mt: '0.625rem !important',
+                'mt': '0.625rem !important',
+                '& > a': {
+                    color: '#353f4f',
+                }
             },
             titleSection: {
                 fontSize: matches ? '2.625rem' : '2.125rem',
