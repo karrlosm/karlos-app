@@ -137,7 +137,7 @@ export const Home = () => {
                         <Grid item lg={6} md={6} sm={12} xs={12}>
                             <motion.div
                                 initial={{ opacity: 0, x: '10vh', y: '0' }}
-                                animate={{ opacity: 1, x: 0, y: 0 }}
+                                animate={(!matches ? scrollY > 0.16: true) ? { opacity: 1, x: 0, y: 0 }:'hidden'}
                                 transition={{ duration: 1 }}>
                                 <Stack spacing={3} sx={{ ...css.box.infoBox }}>
                                     <Typography
